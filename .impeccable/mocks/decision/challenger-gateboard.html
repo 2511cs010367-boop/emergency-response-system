@@ -1,0 +1,39 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;600;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{width:1440px;height:900px;overflow:hidden;font-family:"Inter Tight",system-ui,sans-serif;background:#f5f5f2;color:#101214}
+header{height:60px;display:flex;align-items:center;padding:0 40px;gap:36px;border-bottom:1px solid #101214}
+.mark{font-weight:800;letter-spacing:.18em}
+header a{font-weight:600;opacity:.55}header a.on{opacity:1}
+main{padding:32px 40px;display:grid;grid-template-columns:520px 1fr;gap:40px}
+.pass{background:#fff;border:1px solid #101214;display:grid;grid-template-rows:auto auto auto}
+.pass .seg{padding:20px 24px;border-bottom:1px dashed #101214}
+.lab{font-size:11px;letter-spacing:.14em;font-weight:600;opacity:.6;text-transform:uppercase}
+.mono{font-family:"JetBrains Mono",monospace}
+.pass .id{font-size:44px;font-weight:800}
+.pass .kv{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px}
+.pass .kv b{display:block;font-size:20px;margin-top:4px}
+.pass .act{background:#d4351c;color:#fff;padding:24px;font-size:28px;font-weight:800}
+.board h2{font-size:22px;font-weight:800;margin-bottom:12px}
+.r{display:grid;grid-template-columns:110px 1fr 160px 130px 90px;padding:14px 12px;border-bottom:1px solid #c9c9c4;align-items:center}
+.r.h{font-size:11px;letter-spacing:.14em;font-weight:600;opacity:.6;border-bottom:2px solid #101214}
+.r.lit{background:#ffb000}
+.st{font-weight:800;font-size:14px;letter-spacing:.06em}
+</style></head><body>
+<header><span class="mark">PHOENIX</span><a class="on">Overview</a><a>SOS</a><a>Incidents</a><a>Contacts</a><a>Map</a></header>
+<main>
+<div class="pass">
+<div class="seg"><div class="lab">Your safety pass</div><div class="id mono">AR · 3 CONTACTS</div></div>
+<div class="seg kv"><div><span class="lab">Location</span><b class="mono">12.97N 77.59E</b></div><div><span class="lab">Accuracy</span><b class="mono">18 m</b></div><div><span class="lab">Status</span><b>Standby</b></div></div>
+<div class="act">Hold to raise SOS</div>
+</div>
+<div class="board"><h2>Your board</h2>
+<div class="r h"><span>REF</span><span>INCIDENT</span><span>STATUS</span><span>UPDATED</span><span>STEP</span></div>
+<div class="r lit"><span class="mono">INC-0412</span><span>Road hazard, MG Road</span><span class="st">UNDER REVIEW</span><span class="mono">12m</span><span class="mono">2/5</span></div>
+<div class="r"><span class="mono">INC-0398</span><span>Theft near bus stop</span><span class="st">IN PROGRESS</span><span class="mono">2h</span><span class="mono">4/5</span></div>
+<div class="r"><span class="mono">SOS-0071</span><span>Medical, Indiranagar</span><span class="st">RESOLVED</span><span class="mono">3d</span><span class="mono">5/5</span></div>
+<div class="r"><span class="mono">INC-0350</span><span>Unattended bag</span><span class="st">REJECTED</span><span class="mono">6d</span><span class="mono">—</span></div>
+</div>
+</main></body></html>

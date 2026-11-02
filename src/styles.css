@@ -1,0 +1,275 @@
+@import "tailwindcss" source(none);
+@source "./";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/*
+ * PHOENIX — Civic Service.
+ * White paper, ink type, rules instead of boxes. Red is reserved for SOS and
+ * danger, yellow marks focus and the current step, green means safe.
+ * Never hardcode colours in components; use these tokens.
+ */
+
+@theme inline {
+  --radius-sm: 1px;
+  --radius-md: 2px;
+  --radius-lg: 2px;
+  --radius-xl: 3px;
+  --radius-2xl: 4px;
+  --radius-3xl: 4px;
+
+  --font-display: var(--font-public-sans), "Public Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-public-sans), "Public Sans", ui-sans-serif, system-ui, sans-serif;
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-emergency: var(--emergency);
+  --color-emergency-foreground: var(--emergency-foreground);
+  --color-emergency-deep: var(--emergency-deep);
+  --color-success: var(--success);
+  --color-success-foreground: var(--success-foreground);
+  --color-warning: var(--warning);
+  --color-warning-foreground: var(--warning-foreground);
+  --color-info: var(--info);
+  --color-info-foreground: var(--info-foreground);
+  --color-signal: var(--signal);
+  --color-link: var(--link);
+  --color-ink: var(--ink);
+  --color-paper: var(--paper);
+  --color-surface: var(--surface);
+  --color-surface-foreground: var(--surface-foreground);
+  --color-rule: var(--rule);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-ring-offset-background: var(--background);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+
+  --color-tag-red: var(--tag-red);
+  --color-tag-red-ink: var(--tag-red-ink);
+  --color-tag-yellow: var(--tag-yellow);
+  --color-tag-yellow-ink: var(--tag-yellow-ink);
+  --color-tag-blue: var(--tag-blue);
+  --color-tag-blue-ink: var(--tag-blue-ink);
+  --color-tag-green: var(--tag-green);
+  --color-tag-green-ink: var(--tag-green-ink);
+  --color-tag-grey: var(--tag-grey);
+  --color-tag-grey-ink: var(--tag-grey-ink);
+
+  --color-sidebar: var(--background);
+  --color-sidebar-foreground: var(--foreground);
+  --color-sidebar-primary: var(--primary);
+  --color-sidebar-primary-foreground: var(--primary-foreground);
+  --color-sidebar-accent: var(--accent);
+  --color-sidebar-accent-foreground: var(--foreground);
+  --color-sidebar-border: var(--border);
+  --color-sidebar-ring: var(--ring);
+}
+
+:root {
+  --radius: 2px;
+
+  --ink: #14161a;
+  --paper: #ffffff;
+
+  --background: #ffffff;
+  --foreground: #14161a;
+
+  --surface: #f4f3f1;
+  --surface-foreground: #14161a;
+
+  --card: #ffffff;
+  --card-foreground: #14161a;
+  --popover: #ffffff;
+  --popover-foreground: #14161a;
+
+  /* Primary actions are ink. Red never doubles as a generic action colour. */
+  --primary: #14161a;
+  --primary-foreground: #ffffff;
+
+  --secondary: #eceae6;
+  --secondary-foreground: #14161a;
+
+  --muted: #f4f3f1;
+  --muted-foreground: #565a60;
+
+  --accent: #f4f3f1;
+  --accent-foreground: #14161a;
+
+  --emergency: #d4351c;
+  --emergency-deep: #a32a16;
+  --emergency-foreground: #ffffff;
+  --destructive: #d4351c;
+  --destructive-foreground: #ffffff;
+
+  --success: #00703c;
+  --success-foreground: #ffffff;
+  --warning: #8a6d00;
+  --warning-foreground: #14161a;
+  --info: #1d70b8;
+  --info-foreground: #ffffff;
+
+  /* Focus and "you are here". */
+  --signal: #ffd400;
+  --link: #1d70b8;
+
+  --rule: #14161a;
+  --border: #d9d7d2;
+  --input: #8a8d91;
+  --ring: #ffd400;
+
+  --tag-red: #f6d7d2;
+  --tag-red-ink: #8c2412;
+  --tag-yellow: #fff2a8;
+  --tag-yellow-ink: #534600;
+  --tag-blue: #d6e5f3;
+  --tag-blue-ink: #144e81;
+  --tag-green: #cfe6da;
+  --tag-green-ink: #005a30;
+  --tag-grey: #eceae6;
+  --tag-grey-ink: #3b3f44;
+
+  --chart-1: #14161a;
+  --chart-2: #1d70b8;
+  --chart-3: #00703c;
+  --chart-4: #d4351c;
+  --chart-5: #b58c00;
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  html {
+    scroll-behavior: smooth;
+    background-color: var(--color-background);
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    font-feature-settings: "tnum" 0;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+    letter-spacing: -0.015em;
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  ::selection {
+    background: var(--color-signal);
+    color: var(--color-ink);
+  }
+
+  input,
+  textarea {
+    caret-color: var(--color-ink);
+  }
+
+  a {
+    text-underline-offset: 0.18em;
+    text-decoration-thickness: 1px;
+  }
+
+  /* Civic focus: a solid yellow field with an ink edge, impossible to miss. */
+  :focus-visible {
+    outline: 3px solid var(--color-signal) !important;
+    outline-offset: 0 !important;
+    box-shadow: 0 0 0 5px var(--color-ink) !important;
+  }
+
+  table,
+  time,
+  .tabular {
+    font-variant-numeric: tabular-nums;
+  }
+
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #b9b7b2 transparent;
+  }
+}
+
+/* Leaflet sits on paper like everything else. */
+.leaflet-container {
+  background: var(--color-surface);
+  font-family: var(--font-sans);
+  border-radius: 0;
+}
+.leaflet-popup-content-wrapper {
+  border-radius: 2px;
+  box-shadow: 0 6px 20px -8px rgb(20 22 26 / 35%);
+}
+.leaflet-popup-content-wrapper,
+.leaflet-popup-tip {
+  background: var(--color-popover);
+  color: var(--color-popover-foreground);
+}
+.leaflet-bar {
+  border: 1px solid var(--color-ink) !important;
+  border-radius: 2px !important;
+  box-shadow: none !important;
+}
+.leaflet-bar a {
+  color: var(--color-ink) !important;
+  border-radius: 0 !important;
+}
+
+@keyframes phoenix-beat {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.35;
+  }
+}
+
+@utility live-dot {
+  animation: phoenix-beat 1.6s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}

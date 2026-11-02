@@ -1,0 +1,132 @@
+{
+  "title": "Choose the visual world for PHOENIX",
+  "question": "The roll assigned Civic Service. Keep it, take an alternate, or re-roll. All options honour your brief: clean, minimal, Phosphor icons, no icon tiles.",
+  "options": [
+    {
+      "id": "assigned",
+      "label": "Civic Service",
+      "kicker": "THE ROLL",
+      "lineage": "Public-service design systems (GOV.UK, USWDS) and their plain, trusted forms",
+      "thesis": "PHOENIX reads like a public service you already trust: plain ink, strong type, nothing decorative.",
+      "palette": ["#ffffff", "#14161a", "#f2f1ef", "#d4351c", "#ffd400", "#00703c"],
+      "materials": ["white paper ground", "ink rules", "thick left-rule callouts", "yellow focus bar"],
+      "viewport": "Ink header band with the mark and nav; a left column holding the SOS action as a large red block, right column a time-ranked ledger of your alerts and incidents with status as a numbered step rail.",
+      "risk": "Can read bureaucratic if the type scale is timid or spacing goes loose.",
+      "raised": [
+        {"from": "challenger-splitflap", "raise": "Lists are fixed-column ledgers: rows are live entities ranked by time and columns never move."},
+        {"from": "challenger-acetate", "raise": "One body size does the work; hierarchy comes from weight and space, not a ladder of sizes."},
+        {"from": "challenger-feed", "raise": "The SOS screen gives one thing the whole viewport: the action, nothing beside it."},
+        {"from": "challenger-saville", "raise": "Nothing is labelled twice: no icon echoing its own label, no caption restating a heading."}
+      ],
+      "html": ".impeccable/mocks/decision/assigned.html"
+    },
+    {
+      "id": "model-pick",
+      "label": "Safety Signage",
+      "kicker": "IMPECCABLE’S PICK",
+      "lineage": "ISO 7010 safety signs and emergency wayfinding",
+      "thesis": "State is spoken in the safety-sign code everyone already reads: green safe, yellow caution, red danger, blue required.",
+      "palette": ["#ffffff", "#1a1a1a", "#00843d", "#f9a800", "#c8102e", "#005387"],
+      "materials": ["enamel sign plates", "pictogram geometry", "square-cut panels"],
+      "viewport": "White ground, a green 'you are safe' status plate across the top that turns red when an SOS is live; below, square-cut panels for incidents and contacts.",
+      "risk": "The most familiar answer for a safety product, and four strong hues fight a minimal brief.",
+      "html": ".impeccable/mocks/decision/model-pick.html"
+    },
+    {
+      "id": "challenger-gateboard",
+      "label": "Gate Board",
+      "verdict": "competitive",
+      "lineage": "Boarding pass and live airport gate board",
+      "thesis": "Every alert is a pass with a number; the command center is a live board that reranks in place.",
+      "palette": ["#f5f5f2", "#101214", "#ffb000", "#d4351c"],
+      "materials": ["segmented pass", "tabular figures", "change-hold highlight"],
+      "viewport": "Your active SOS as a segmented pass (ID, time, coordinates, status); below it a board of incidents ranked by time, changed rows lit amber until seen.",
+      "case": "Strong for admin clarity; citizens identify less with travel than with public service.",
+      "risk": "Can tip into airport costume if the pass is drawn too literally.",
+      "html": ".impeccable/mocks/decision/challenger-gateboard.html",
+      "hero": "https://impeccable.style/worlds/cards/vernacular-ephemera-boarding-pass-and-gate-board-hero.webp"
+    },
+    {
+      "id": "challenger-splitflap",
+      "label": "Split-Flap Concourse",
+      "verdict": "declined",
+      "lineage": "Rail concourse departure boards",
+      "thesis": "Alerts as rows on a flap board.",
+      "palette": ["#0b0b0b", "#f4f4f4", "#ffb000"],
+      "materials": ["flap faces", "brushed steel"],
+      "viewport": "A black board of alerts.",
+      "case": "Loses both axes: dark board is a costume on a calm citizen app.",
+      "risk": "Novelty.",
+      "kept": "Fixed-column ledgers ranked by time.",
+      "hero": "https://impeccable.style/worlds/cards/signals-instruments-split-flap-concourse-hero.webp"
+    },
+    {
+      "id": "challenger-acetate",
+      "label": "Acetate Manual",
+      "verdict": "declined",
+      "lineage": "Boxed-software reference manuals",
+      "thesis": "Sections as coloured divider boards.",
+      "palette": ["#f2a900", "#1f6f50", "#2b3fa0", "#f7f7f2"],
+      "materials": ["acetate leaves", "tab rail"],
+      "viewport": "A tabbed manual page.",
+      "case": "Loses both axes: too ornamental for minimal.",
+      "risk": "Ornament.",
+      "kept": "One body size does the work.",
+      "hero": "https://impeccable.style/worlds/cards/rw-manual-acetate-tab-board-hero.webp"
+    },
+    {
+      "id": "challenger-feed",
+      "label": "Vertical Feed",
+      "verdict": "declined",
+      "lineage": "Full-bleed vertical media apps",
+      "thesis": "One item owns the viewport.",
+      "palette": ["#000000", "#ffffff"],
+      "materials": ["full-bleed media", "glyph rail"],
+      "viewport": "One alert per screen.",
+      "case": "Loses both axes: wrong model for lists and admin.",
+      "risk": "Unscannable.",
+      "kept": "SOS screen gives one thing the whole viewport.",
+      "hero": "https://impeccable.style/worlds/cards/pop-culture-shelf-vertical-video-feed-surface-hero.webp"
+    },
+    {
+      "id": "challenger-saville",
+      "label": "Catalog Sleeve",
+      "verdict": "declined",
+      "lineage": "Factory Records catalog identity",
+      "thesis": "Everything coded by number and colour.",
+      "palette": ["#0a0a0a", "#ffffff"],
+      "materials": ["matte black", "hairline plot"],
+      "viewport": "A coded index.",
+      "case": "Loses both axes: coded labels hurt clarity in an emergency.",
+      "risk": "Cryptic.",
+      "kept": "Nothing is labelled twice.",
+      "hero": "https://impeccable.style/worlds/cards/brand-identity-canon-saville-catalog-sleeve-hero.webp"
+    },
+    {
+      "id": "challenger-zoomap",
+      "label": "Guide Map",
+      "verdict": "declined",
+      "lineage": "Zoo and gardens guide maps",
+      "thesis": "Areas as swelling lobes of colour.",
+      "palette": ["#8ed462", "#f5f1e4", "#2c2e2a", "#ff705d"],
+      "materials": ["flat colour lobes"],
+      "viewport": "A lobe per screen.",
+      "case": "Loses both axes: playful tone wrong for emergencies.",
+      "risk": "Whimsy.",
+      "kept": "One element dominates each screen.",
+      "hero": "https://impeccable.style/worlds/cards/aww2-zoo-gardens-guide-map-hero.webp"
+    }
+  ],
+  "reroll": {"registers": ["safer", "bolder"]},
+  "canon": true,
+  "canonCard": {
+    "label": "The category standard",
+    "thesis": "A clean SaaS dashboard: sidebar, stat row, tables, one blue accent, executed impeccably.",
+    "palette": ["#ffffff", "#0f172a", "#e5e7eb", "#2563eb", "#dc2626"],
+    "materials": ["sidebar nav", "hairline tables", "neutral greys"],
+    "viewport": "Sidebar left, page title, a row of plain numbers, then tables of alerts and incidents.",
+    "risk": "Indistinguishable from every admin template by design.",
+    "html": ".impeccable/mocks/decision/canon.html"
+  },
+  "steer": true
+}

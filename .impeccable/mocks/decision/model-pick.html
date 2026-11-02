@@ -1,0 +1,44 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{width:1440px;height:900px;overflow:hidden;font-family:Archivo,system-ui,sans-serif;background:#fff;color:#1a1a1a}
+aside{position:absolute;left:0;top:0;bottom:0;width:240px;border-right:2px solid #1a1a1a;padding:28px 24px}
+.mark{font-weight:800;letter-spacing:.16em;font-size:18px}
+aside a{display:block;padding:10px 0;font-weight:600;color:#1a1a1a;opacity:.6}
+aside a.on{opacity:1;border-left:6px solid #00843d;padding-left:12px}
+aside nav{margin-top:40px}
+main{margin-left:240px;padding:32px 40px}
+.plate{background:#00843d;color:#fff;height:180px;display:flex;align-items:center;justify-content:space-between;padding:0 40px}
+.plate h1{font-size:48px;font-weight:800;letter-spacing:-.01em}
+.plate p{font-size:18px;margin-top:6px;opacity:.9}
+.sosbtn{width:150px;height:150px;border-radius:50%;background:#c8102e;border:8px solid #fff;display:grid;place-items:center;font-weight:800;font-size:28px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:28px}
+.panel{border:2px solid #1a1a1a;padding:22px;height:300px}
+.panel h2{font-size:14px;letter-spacing:.12em;font-weight:800;text-transform:uppercase}
+.big{font-size:56px;font-weight:800;margin-top:12px}
+.li{display:flex;justify-content:space-between;padding:10px 0;border-top:1px solid #ccc;font-size:15px}
+.tri{display:inline-block;width:0;height:0;border-left:8px solid transparent;border-right:8px solid transparent;border-bottom:14px solid #f9a800;margin-right:8px;vertical-align:-2px}
+.sq{display:inline-block;width:14px;height:14px;background:#00843d;margin-right:8px;vertical-align:-2px}
+.ci{display:inline-block;width:14px;height:14px;background:#005387;border-radius:50%;margin-right:8px;vertical-align:-2px}
+.strip{margin-top:24px;background:#f9a800;height:56px;display:flex;align-items:center;padding:0 24px;font-weight:800}
+</style></head><body>
+<aside><div class="mark">PHOENIX</div><nav><a class="on">Overview</a><a>SOS</a><a>Incidents</a><a>Contacts</a><a>Map</a><a>Alerts</a><a>Profile</a></nav></aside>
+<main>
+<div class="plate"><div><h1>You are safe</h1><p>No active SOS · location ready · 3 contacts on standby</p></div><div class="sosbtn">SOS</div></div>
+<div class="grid">
+<div class="panel"><h2>Open incidents</h2><div class="big">2</div>
+<div class="li"><span><i class="tri"></i>Road hazard</span><span>Under review</span></div>
+<div class="li"><span><i class="ci"></i>Theft</span><span>In progress</span></div></div>
+<div class="panel"><h2>Contacts</h2><div class="big">3</div>
+<div class="li"><span><i class="sq"></i>Meera Rao</span><span>Parent</span></div>
+<div class="li"><span><i class="sq"></i>Karan Shah</span><span>Friend</span></div>
+<div class="li"><span><i class="sq"></i>Dr. Iyer</span><span>Doctor</span></div></div>
+<div class="panel"><h2>Nearby</h2><div class="big">7</div>
+<div class="li"><span>Police station</span><span>0.8 km</span></div>
+<div class="li"><span>Hospital</span><span>1.2 km</span></div>
+<div class="li"><span>Fire station</span><span>2.4 km</span></div></div>
+</div>
+<div class="strip">In a life-threatening situation, always call 112 first.</div>
+</main></body></html>

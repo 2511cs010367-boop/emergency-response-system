@@ -1,0 +1,33 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{width:1440px;height:900px;overflow:hidden;font-family:Inter,system-ui,sans-serif;background:#fff;color:#0f172a;display:flex}
+aside{width:248px;border-right:1px solid #e5e7eb;padding:20px 14px;background:#fafafa}
+.mark{font-weight:600;padding:6px 10px 24px}
+aside a{display:block;padding:8px 10px;border-radius:6px;color:#475569;font-size:14px}
+aside a.on{background:#eef2ff;color:#2563eb;font-weight:500}
+main{flex:1;padding:32px 40px}
+h1{font-size:24px;font-weight:600}
+p.s{color:#64748b;font-size:14px;margin-top:4px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid #e5e7eb;border-radius:10px;margin-top:24px}
+.stats div{padding:18px 20px;border-right:1px solid #e5e7eb}.stats div:last-child{border:0}
+.stats small{color:#64748b;font-size:13px}.stats b{display:block;font-size:28px;font-weight:600;margin-top:6px}
+.cols{display:grid;grid-template-columns:2fr 1fr;gap:24px;margin-top:24px}
+.box{border:1px solid #e5e7eb;border-radius:10px}
+.box h2{font-size:15px;font-weight:600;padding:14px 18px;border-bottom:1px solid #e5e7eb}
+.tr{display:flex;justify-content:space-between;padding:12px 18px;border-bottom:1px solid #f1f5f9;font-size:14px}
+.pill{font-size:12px;padding:2px 8px;border-radius:999px;background:#f1f5f9}
+.sos{background:#dc2626;color:#fff;border-radius:10px;padding:24px;font-weight:600;font-size:20px;height:140px}
+</style></head><body>
+<aside><div class="mark">PHOENIX</div><a class="on">Dashboard</a><a>Emergency SOS</a><a>Incidents</a><a>Contacts</a><a>Safety map</a><a>Notifications</a><a>Profile</a></aside>
+<main><h1>Dashboard</h1><p class="s">Welcome back, Aditi</p>
+<div class="stats"><div><small>Active SOS</small><b>0</b></div><div><small>Open incidents</small><b>2</b></div><div><small>Contacts</small><b>3</b></div><div><small>Unread alerts</small><b>1</b></div></div>
+<div class="cols"><div class="box"><h2>Recent incidents</h2>
+<div class="tr"><span>Road hazard · MG Road</span><span class="pill">Under review</span></div>
+<div class="tr"><span>Theft · bus stop</span><span class="pill">In progress</span></div>
+<div class="tr"><span>Medical SOS · Indiranagar</span><span class="pill">Resolved</span></div>
+<div class="tr"><span>Unattended bag</span><span class="pill">Rejected</span></div></div>
+<div><div class="sos">Emergency SOS<br><small style="font-weight:400;font-size:14px">Hold to alert your contacts</small></div></div></div>
+</main></body></html>
